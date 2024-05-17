@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --base-100: 225deg 38% 8%;
+    --base-200: 224deg 25% 12%;
+    --base-300: 224deg 19% 15%;
+    --base-400: 224deg 8% 38%;
+    --base-500: 224deg 7% 56%;
+    --base-900: 214deg 78% 98%;
+
+    --primary: 151deg 87% 31%;
+  }
+
   .lucide {
     stroke: #f4f4;
   }
+}
+
+html {
+  @apply bg-base-100 text-base-900;
 }
