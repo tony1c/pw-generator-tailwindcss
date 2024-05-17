@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-base-100 text-base-900;
+}
+
 @layer base {
   :root {
     --base-100: 225deg 38% 8%;
@@ -18,19 +22,14 @@
   .lucide {
     @apply stroke-base-900;
   }
-
-  /* input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 20px;
-    cursor: ew-resize;
-    border-radius: 50%;
-
-    @apply bg-base-900;
-  } */
 }
 
-html {
-  @apply bg-base-100 text-base-900;
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  border: 2px solid hsl(var(--primary));
+  background: hsl(var(--base-900));
+  cursor: pointer;
+  border-radius: 50%;
 }

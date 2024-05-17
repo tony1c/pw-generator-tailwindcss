@@ -629,17 +629,6 @@ select {
   stroke: hsl(var(--base-900) / 1);
 }
 
-/* input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 20px;
-    cursor: ew-resize;
-    border-radius: 50%;
-
-    @apply bg-base-900;
-  } */
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -887,10 +876,6 @@ select {
   margin-top: 1.25rem;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -937,6 +922,12 @@ select {
 
 .max-w-\[450px\] {
   max-width: 450px;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .grid-cols-1 {
@@ -1079,10 +1070,6 @@ select {
   color: hsl(var(--primary) / var(--tw-text-opacity));
 }
 
-.accent-primary {
-  accent-color: hsl(var(--primary) / 1);
-}
-
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1117,6 +1104,17 @@ html {
   color: hsl(var(--base-900) / var(--tw-text-opacity));
 }
 
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 24px;
+  width: 24px;
+  border: 2px solid hsl(var(--primary));
+  background: hsl(var(--base-900));
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1128,11 +1126,6 @@ html {
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
-
-.before\:block::before {
-  content: var(--tw-content);
-  display: block;
 }
 
 .before\:-translate-y-3::before {
