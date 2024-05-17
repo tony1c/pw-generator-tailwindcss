@@ -12,13 +12,13 @@
       <!-- App layout -->
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <!-- info column visibile on larger displays -->
-        <div class="hidden"></div>
+        <div class="hidden lg:block"></div>
 
         <!-- app card -->
         <!-- container -->
         <div class="flex h-screen items-center justify-center">
           <!-- card -->
-          <div class="bg-base-300 h-[638px] w-[406px] rounded-lg px-7 py-8">
+          <div class="bg-base-200 w-[450px] space-y-4 rounded-lg px-7 py-8">
             <!-- card content -->
             <!-- main icon -->
             <div
@@ -30,6 +30,105 @@
                 <i data-lucide="key-round"></i>
               </div>
             </div>
+
+            <!-- text content -->
+            <!-- title -->
+            <div class="space-y-3">
+              <h1 class="text-3xl font-semibold tracking-wide">
+                Genera la tua password
+              </h1>
+              <p class="text-base-500">
+                Seleziona cosa includere all'interno della password
+              </p>
+            </div>
+
+            <!-- form -->
+            <form>
+              <fieldset>
+                <legend class="sr-only">Options</legend>
+              </fieldset>
+
+              <!-- form options -->
+              <div class="mt-5 space-y-9">
+                <!-- numbers checkbox -->
+                <fieldset class="flex gap-2">
+                  <input
+                    name="numbers"
+                    type="checkbox"
+                    class="form-checkbox text-primary ring-primary border-primary focus:ring-primary mt-1 h-4 w-4 rounded"
+                  />
+                  <div class="flex flex-col">
+                    <label>Numbers</label>
+                    <p class="text-base-500 text-sm">
+                      Include numeric digits (0 - 9) in the password
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- symbols checkbox -->
+                <fieldset class="flex gap-2">
+                  <input
+                    name="symbols"
+                    type="checkbox"
+                    class="form-checkbox text-primary ring-primary border-primary focus:ring-primary mt-1 h-4 w-4 rounded"
+                  />
+                  <div class="flex flex-col">
+                    <label>Symbols</label>
+                    <p class="text-base-500 text-sm">
+                      Include special characters (e.g., I, #, S) in the
+                      password.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- uppercase checkbox -->
+                <fieldset class="flex gap-2">
+                  <input
+                    name="uppercase"
+                    type="checkbox"
+                    class="form-checkbox text-primary ring-primary border-primary focus:ring-primary mt-1 h-4 w-4 rounded"
+                  />
+                  <div class="flex flex-col">
+                    <label>Uppercase</label>
+                    <p class="text-base-500 text-sm">
+                      Include uppercase letters (A-Z) in the password.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- input range -->
+                <fieldset>
+                  <input
+                    id="range"
+                    type="range"
+                    min="8"
+                    max="128"
+                    class="accent-primary h-2 w-full"
+                  />
+                </fieldset>
+
+                <!-- password display section -->
+              </div>
+              <div class="mt-16 space-y-6">
+                <!-- display -->
+                <div
+                  class="bg-base-300 flex w-full items-center gap-4 rounded-md p-4"
+                >
+                  <i data-lucide="key-round"></i>
+                  <p class="text-base-500">.pZS[*aQ4U6qC%sij_Cj5f$SVH</p>
+                </div>
+
+                <!-- button -->
+                <button
+                  class="bg-primary hover:bg-primary/80 otuline-primary focus-visible:outline-primary text-md inline-flex w-full rounded-md py-4 font-semibold tracking-wide shadow-sm transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                >
+                  <span class="mx-auto flex items-center gap-2">
+                    <i data-lucide="copy"></i>
+                    Copy Password
+                  </span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
