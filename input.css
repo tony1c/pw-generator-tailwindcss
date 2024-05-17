@@ -15,7 +15,7 @@
   }
 
   .lucide {
-    stroke: #f4f4;
+    @apply stroke-base-900;
   }
 }
 
