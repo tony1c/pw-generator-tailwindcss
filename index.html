@@ -32,11 +32,15 @@
             <div class="mt-16 space-y-5">
               <!-- pw length box -->
               <div class="flex items-center gap-3">
-                <div class="border-base-400 rounded-lg border p-2">
+                <div class="border-base-300 relative rounded-lg border p-2">
                   <i
                     data-lucide="rectangle-ellipsis"
                     class="stroke-base-600 h-5 w-5"
                   ></i>
+                  <!-- connecting line between boxes -->
+                  <div
+                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                  ></div>
                 </div>
                 <!-- pw length text -->
                 <div>
@@ -48,19 +52,60 @@
                   </p>
                 </div>
               </div>
+
               <!-- include numbers box -->
               <div class="flex items-center gap-3">
-                <div class="border-base-400 rounded-lg border p-2">
+                <div class="border-base-300 relative rounded-lg border p-2">
                   <i
                     data-lucide="text-cursor-input"
                     class="stroke-base-600 h-5 w-5"
                   ></i>
+
+                  <!-- connecting line between boxes -->
+                  <div
+                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                  ></div>
                 </div>
                 <!-- pw length text -->
                 <div>
                   <h2 class="text-base-600">Includi numeri</h2>
                   <p class="text-base-400">
                     Una password con numeri è più sicura
+                  </p>
+                </div>
+              </div>
+
+              <!-- include symbols box -->
+              <div class="flex items-center gap-3">
+                <div class="border-base-300 relative rounded-lg border p-2">
+                  <i data-lucide="command" class="stroke-base-600 h-5 w-5"></i>
+
+                  <!-- connecting line between boxes -->
+                  <div
+                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                  ></div>
+                </div>
+                <!-- pw length text -->
+                <div>
+                  <h2 class="text-base-600">Includi simboli</h2>
+                  <p class="text-base-400">
+                    Una password con simboli è più sicura
+                  </p>
+                </div>
+              </div>
+
+              <!-- includes uppecase and lowercase letters box -->
+              <div class="flex items-start gap-3">
+                <div
+                  class="border-base-300 relative mt-1 rounded-lg border p-2"
+                >
+                  <i data-lucide="type" class="stroke-base-600 h-5 w-5"></i>
+                </div>
+                <!-- pw length text -->
+                <div>
+                  <h2 class="text-base-600">Includi maiuscole e minuscole</h2>
+                  <p class="text-base-400">
+                    Una password con maiuscole e minuscole è più sicura
                   </p>
                 </div>
               </div>
