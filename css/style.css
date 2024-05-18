@@ -947,6 +947,14 @@ select {
   height: 100vh;
 }
 
+.h-\[7px\] {
+  height: 7px;
+}
+
+.h-\[6px\] {
+  height: 6px;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -1041,6 +1049,10 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 .rounded {
@@ -1344,5 +1356,10 @@ input[type="range"]::-webkit-slider-thumb {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
