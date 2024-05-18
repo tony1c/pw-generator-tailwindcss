@@ -262,17 +262,17 @@
 
       // slider controls
       const slider = document.querySelector("#range");
-      const line = document.querySelector("#progress-bar");
+      const progressBar = document.querySelector("#progress-bar");
 
       let value = slider.value;
       const minValue = slider.min;
       const maxValue = slider.max;
-      line.style.width =
+      progressBar.style.width =
         ((value - minValue) / (maxValue - minValue)) * 100 + "%";
 
       slider.addEventListener("input", () => {
         value = slider.value;
-        line.style.width =
+        progressBar.style.width =
           ((value - minValue) / (maxValue - minValue)) * 100 + "%";
       });
     </script>
