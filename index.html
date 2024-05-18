@@ -209,19 +209,19 @@
                 </fieldset>
 
                 <!-- input range -->
-                <fieldset class="relative">
+                <fieldset class="relative flex items-center">
                   <input
                     id="range"
                     type="range"
                     min="8"
                     max="128"
                     value="60"
-                    class="h-[7px] w-full cursor-pointer appearance-none rounded"
+                    class="h-2 w-full cursor-pointer appearance-none rounded"
                   />
                   <!-- progress bar styled with primary color -->
                   <div
                     id="progress-bar"
-                    class="absolute top-[11px] z-10 h-[7px] rounded bg-primary"
+                    class="absolute z-10 h-2 rounded bg-primary"
                   ></div>
                 </fieldset>
               </div>
@@ -266,7 +266,7 @@
       const progressBar = document.querySelector("#progress-bar");
 
       let value = slider.value;
-      const minValue = slider.min;
+      const minValue = slider.min - 2;
       const maxValue = slider.max;
       progressBar.style.width =
         ((value - minValue) / (maxValue - minValue)) * 100 + "%";
@@ -275,6 +275,7 @@
         value = slider.value;
         progressBar.style.width =
           ((value - minValue) / (maxValue - minValue)) * 100 + "%";
+        console.log(progressBar.style.width);
       });
     </script>
   </body>

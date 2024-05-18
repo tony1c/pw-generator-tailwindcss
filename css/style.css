@@ -878,10 +878,6 @@ select {
   left: 50%;
 }
 
-.top-\[11px\] {
-  top: 11px;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -931,16 +927,16 @@ select {
   height: 3.5rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
 .h-5 {
   height: 1.25rem;
-}
-
-.h-\[7px\] {
-  height: 7px;
 }
 
 .h-full {
