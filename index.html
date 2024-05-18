@@ -10,10 +10,62 @@
   <body>
     <main>
       <!-- App layout -->
-      <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-[400px_minmax(900px,_1fr)_100px]"
+      >
         <!-- info column visibile on larger displays -->
         <div class="hidden lg:block">
-          <!-- later todo -->
+          <div class="bg-base-200 h-full p-8">
+            <!-- main icon -->
+            <div
+              class="before:bg-primary relative h-14 w-14 before:absolute before:inset-0 before:-translate-y-3 before:translate-x-2 before:rotate-12 before:rounded-lg"
+            >
+              <div
+                class="bg-base-900/20 relative flex h-14 w-14 items-center justify-center rounded-lg backdrop-blur-md"
+              >
+                <!-- Lucide icon (with CDN) to replace with favourite iconpack -->
+                <i data-lucide="key-round"></i>
+              </div>
+            </div>
+
+            <!-- info column details -->
+            <div class="mt-16 space-y-5">
+              <!-- pw length box -->
+              <div class="flex items-center gap-3">
+                <div class="border-base-400 rounded-lg border p-2">
+                  <i
+                    data-lucide="rectangle-ellipsis"
+                    class="stroke-base-600 h-5 w-5"
+                  ></i>
+                </div>
+                <!-- pw length text -->
+                <div>
+                  <h2 class="text-base-600">
+                    Seleziona la lunghezza della password
+                  </h2>
+                  <p class="text-base-400">
+                    Una password più lunga è più sicura
+                  </p>
+                </div>
+              </div>
+              <!-- include numbers box -->
+              <div class="flex items-center gap-3">
+                <div class="border-base-400 rounded-lg border p-2">
+                  <i
+                    data-lucide="text-cursor-input"
+                    class="stroke-base-600 h-5 w-5"
+                  ></i>
+                </div>
+                <!-- pw length text -->
+                <div>
+                  <h2 class="text-base-600">Includi numeri</h2>
+                  <p class="text-base-400">
+                    Una password con numeri è più sicura
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- pw generator app -->
@@ -149,3 +201,10 @@
     </script>
   </body>
 </html>
+<!-- icons -->
+<!-- <i data-lucide="copy"></i>
+<i data-lucide="key-round"></i>
+<i data-lucide="type"></i>
+<i data-lucide="command"></i>
+<i data-lucide="text-cursor-input"></i>
+<i data-lucide="rectangle-ellipsis"></i> -->

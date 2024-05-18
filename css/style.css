@@ -876,6 +876,10 @@ select {
   margin-top: 1.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -896,28 +900,24 @@ select {
   height: 3.5rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-4 {
   height: 1rem;
+}
+
+.h-\[7px\] {
+  height: 7px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-\[6px\] {
-  height: 6px;
-}
-
-.h-\[7px\] {
-  height: 7px;
+.h-5 {
+  height: 1.25rem;
 }
 
 .w-14 {
@@ -930,6 +930,10 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .max-w-\[450px\] {
@@ -966,6 +970,10 @@ select {
   gap: 1rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -990,6 +998,12 @@ select {
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1000,6 +1014,15 @@ select {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-base-400 {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--base-400) / var(--tw-border-opacity));
 }
 
 .border-primary {
@@ -1026,8 +1049,20 @@ select {
   background-color: hsl(var(--primary) / var(--tw-bg-opacity));
 }
 
+.stroke-base-600 {
+  stroke: hsl(var(--base-600) / 1);
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-7 {
@@ -1065,6 +1100,11 @@ select {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-base-400 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--base-400) / var(--tw-text-opacity));
 }
 
 .text-base-500 {
@@ -1199,7 +1239,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: block;
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:grid-cols-\[400px_minmax\(900px\2c _1fr\)_100px\] {
+    grid-template-columns: 400px minmax(900px, 1fr) 100px;
   }
 }
