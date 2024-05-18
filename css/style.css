@@ -971,6 +971,14 @@ select {
   width: 100%;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-\[442px\] {
+  width: 442px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
