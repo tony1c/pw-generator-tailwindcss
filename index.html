@@ -10,7 +10,7 @@
   <body>
     <main>
       <!-- App layout -->
-      <div class="grid grid-cols-1 lg:grid-cols-[400px_1fr]">
+      <div class="grid grid-cols-1 lg:grid-cols-[380px_1fr]">
         <!-- info column visibile on larger displays -->
         <div class="hidden lg:block">
           <div class="bg-base-200 h-full p-8">
@@ -27,21 +27,23 @@
             </div>
 
             <!-- info column details -->
-            <div class="mt-16 space-y-5">
+            <div class="mt-20 space-y-6 text-sm">
               <!-- pw length box -->
               <div class="flex items-center gap-3">
-                <div class="border-base-300 relative rounded-lg border p-2">
+                <div
+                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                >
                   <i
                     data-lucide="rectangle-ellipsis"
-                    class="stroke-base-600 h-5 w-5"
+                    class="stroke-base-500 h-5 w-5"
                   ></i>
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
                   ></div>
                 </div>
-                <!-- pw length text -->
-                <div>
+                <!-- box text -->
+                <div class="space-y-1">
                   <h2 class="text-base-500">
                     Seleziona la lunghezza della password
                   </h2>
@@ -53,19 +55,21 @@
 
               <!-- include numbers box -->
               <div class="flex items-center gap-3">
-                <div class="border-base-300 relative rounded-lg border p-2">
+                <div
+                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                >
                   <i
                     data-lucide="text-cursor-input"
-                    class="stroke-base-600 h-5 w-5"
+                    class="stroke-base-500 h-5 w-5"
                   ></i>
 
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
                   ></div>
                 </div>
-                <!-- pw length text -->
-                <div>
+                <!-- box text -->
+                <div class="space-y-1">
                   <h2 class="text-base-500">Includi numeri</h2>
                   <p class="text-base-400">
                     Una password con numeri è più sicura
@@ -75,16 +79,18 @@
 
               <!-- include symbols box -->
               <div class="flex items-center gap-3">
-                <div class="border-base-300 relative rounded-lg border p-2">
-                  <i data-lucide="command" class="stroke-base-600 h-5 w-5"></i>
+                <div
+                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                >
+                  <i data-lucide="command" class="stroke-base-500 h-5 w-5"></i>
 
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300 absolute -bottom-7 left-1/2 h-6 border-l"
+                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
                   ></div>
                 </div>
-                <!-- pw length text -->
-                <div>
+                <!-- box text -->
+                <div class="space-y-1">
                   <h2 class="text-base-500">Includi simboli</h2>
                   <p class="text-base-400">
                     Una password con simboli è più sicura
@@ -95,12 +101,12 @@
               <!-- includes uppecase and lowercase letters box -->
               <div class="flex items-start gap-3">
                 <div
-                  class="border-base-300 relative mt-1 rounded-lg border p-2"
+                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
                 >
-                  <i data-lucide="type" class="stroke-base-600 h-5 w-5"></i>
+                  <i data-lucide="type" class="stroke-base-500 h-5 w-5"></i>
                 </div>
-                <!-- pw length text -->
-                <div>
+                <!-- box text -->
+                <div class="space-y-1">
                   <h2 class="text-base-500">Includi maiuscole e minuscole</h2>
                   <p class="text-base-400">
                     Una password con maiuscole e minuscole è più sicura
