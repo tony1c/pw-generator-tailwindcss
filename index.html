@@ -13,13 +13,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-[380px_1fr]">
         <!-- info column visibile on larger displays -->
         <div class="hidden lg:block">
-          <div class="bg-base-200 h-full px-8 py-12">
+          <div class="h-full bg-base-200 px-8 py-12">
             <!-- main icon -->
             <div
-              class="before:bg-primary relative h-14 w-14 before:absolute before:inset-0 before:-translate-y-3 before:translate-x-2 before:rotate-12 before:rounded-xl"
+              class="relative h-14 w-14 before:absolute before:inset-0 before:-translate-y-3 before:translate-x-2 before:rotate-12 before:rounded-xl before:bg-primary"
             >
               <div
-                class="bg-base-900/40 border-base-900/30 relative flex h-14 w-14 items-center justify-center rounded-xl border backdrop-blur-md"
+                class="relative flex h-14 w-14 items-center justify-center rounded-xl border border-base-900/30 bg-base-900/40 backdrop-blur-md"
               >
                 <!-- Lucide icon (with CDN) to replace with favourite iconpack -->
                 <i data-lucide="key-round"></i>
@@ -31,15 +31,15 @@
               <!-- pw length box -->
               <div class="flex items-center gap-3">
                 <div
-                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                  class="relative rounded-lg border-2 border-base-300 p-[10px]"
                 >
                   <i
                     data-lucide="rectangle-ellipsis"
-                    class="stroke-base-500 h-5 w-5"
+                    class="h-5 w-5 stroke-base-500"
                   ></i>
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
+                    class="absolute -bottom-6 left-1/2 h-5 border-l-2 border-base-300/80"
                   ></div>
                 </div>
                 <!-- box text -->
@@ -56,16 +56,16 @@
               <!-- include numbers box -->
               <div class="flex items-center gap-3">
                 <div
-                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                  class="relative rounded-lg border-2 border-base-300 p-[10px]"
                 >
                   <i
                     data-lucide="text-cursor-input"
-                    class="stroke-base-500 h-5 w-5"
+                    class="h-5 w-5 stroke-base-500"
                   ></i>
 
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
+                    class="absolute -bottom-6 left-1/2 h-5 border-l-2 border-base-300/80"
                   ></div>
                 </div>
                 <!-- box text -->
@@ -80,13 +80,13 @@
               <!-- include symbols box -->
               <div class="flex items-center gap-3">
                 <div
-                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                  class="relative rounded-lg border-2 border-base-300 p-[10px]"
                 >
-                  <i data-lucide="command" class="stroke-base-500 h-5 w-5"></i>
+                  <i data-lucide="command" class="h-5 w-5 stroke-base-500"></i>
 
                   <!-- connecting line between boxes -->
                   <div
-                    class="border-base-300/80 absolute -bottom-6 left-1/2 h-5 border-l-2"
+                    class="absolute -bottom-6 left-1/2 h-5 border-l-2 border-base-300/80"
                   ></div>
                 </div>
                 <!-- box text -->
@@ -101,9 +101,9 @@
               <!-- includes uppecase and lowercase letters box -->
               <div class="flex items-start gap-3">
                 <div
-                  class="border-base-300 relative rounded-lg border-2 p-[10px]"
+                  class="relative rounded-lg border-2 border-base-300 p-[10px]"
                 >
-                  <i data-lucide="type" class="stroke-base-500 h-5 w-5"></i>
+                  <i data-lucide="type" class="h-5 w-5 stroke-base-500"></i>
                 </div>
                 <!-- box text -->
                 <div class="space-y-1">
@@ -129,14 +129,14 @@
             ></div>
           </div>
           <!-- pw generator -->
-          <div class="bg-base-200 max-w-[450px] space-y-4 rounded-lg px-7 py-8">
+          <div class="max-w-[450px] space-y-4 rounded-lg bg-base-200 px-7 py-8">
             <!-- pw generator content -->
             <!-- main icon -->
             <div
-              class="before:bg-primary relative h-14 w-14 before:absolute before:inset-0 before:-translate-y-3 before:translate-x-2 before:rotate-12 before:rounded-xl"
+              class="relative h-14 w-14 before:absolute before:inset-0 before:-translate-y-3 before:translate-x-2 before:rotate-12 before:rounded-xl before:bg-primary"
             >
               <div
-                class="bg-base-900/20 border-base-900/20 relative flex h-14 w-14 items-center justify-center rounded-xl border backdrop-blur-md"
+                class="relative flex h-14 w-14 items-center justify-center rounded-xl border border-base-900/20 bg-base-900/20 backdrop-blur-md"
               >
                 <!-- Lucide icon (with CDN) to replace with favourite iconpack -->
                 <i data-lucide="key-round"></i>
@@ -167,11 +167,11 @@
                   <input
                     name="numbers"
                     type="checkbox"
-                    class="form-checkbox focus:ring-primary border-primary text-primary focus:ring-offset-base-200 mt-1 h-4 w-4 rounded"
+                    class="form-checkbox mt-1 h-4 w-4 rounded border-primary text-primary focus:ring-primary focus:ring-offset-base-200"
                   />
                   <div class="flex flex-col">
                     <label class="text-base-600">Numbers</label>
-                    <p class="text-base-500 text-sm">
+                    <p class="text-sm text-base-500">
                       Include numeric digits (0 - 9) in the password
                     </p>
                   </div>
@@ -182,11 +182,11 @@
                   <input
                     name="symbols"
                     type="checkbox"
-                    class="form-checkbox focus:ring-primary border-primary text-primary focus:ring-offset-base-200 mt-1 h-4 w-4 rounded"
+                    class="form-checkbox mt-1 h-4 w-4 rounded border-primary text-primary focus:ring-primary focus:ring-offset-base-200"
                   />
                   <div class="flex flex-col">
                     <label class="text-base-600">Symbols</label>
-                    <p class="text-base-500 text-sm">
+                    <p class="text-sm text-base-500">
                       Include special characters (e.g., I, #, S) in the
                       password.
                     </p>
@@ -198,26 +198,30 @@
                   <input
                     name="uppercase"
                     type="checkbox"
-                    class="form-checkbox focus:ring-primary border-primary text-primary focus:ring-offset-base-200 mt-1 h-4 w-4 rounded"
+                    class="form-checkbox mt-1 h-4 w-4 rounded border-primary text-primary focus:ring-primary focus:ring-offset-base-200"
                   />
                   <div class="flex flex-col">
                     <label class="text-base-600">Uppercase</label>
-                    <p class="text-base-500 text-sm">
+                    <p class="text-sm text-base-500">
                       Include uppercase letters (A-Z) in the password.
                     </p>
                   </div>
                 </fieldset>
 
                 <!-- input range -->
-                <fieldset>
+                <fieldset class="relative w-full">
                   <input
                     id="range"
                     type="range"
                     min="8"
                     max="128"
                     value="60"
-                    class="bg-primary h-[7px] w-full appearance-none rounded"
+                    class="h-[7px] w-full appearance-none rounded"
                   />
+                  <div
+                    id="progress-bar"
+                    class="absolute top-[11px] z-10 h-[7px] rounded bg-primary"
+                  ></div>
                 </fieldset>
               </div>
 
@@ -225,7 +229,7 @@
               <div class="mt-16 space-y-6">
                 <!-- display -->
                 <div
-                  class="bg-base-300 flex w-full items-center gap-4 rounded-md p-4"
+                  class="flex w-full items-center gap-4 rounded-md bg-base-300 p-4"
                 >
                   <!-- Lucide icon (with CDN) to replace with favourite iconpack -->
                   <i data-lucide="key-round"></i>
@@ -236,7 +240,7 @@
 
                 <!-- button -->
                 <button
-                  class="bg-primary hover:bg-primary/80 otuline-primary focus-visible:outline-primary text-md inline-flex w-full rounded-md py-4 font-semibold tracking-wide shadow-sm transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  class="text-md inline-flex w-full rounded-md bg-primary py-4 font-semibold tracking-wide shadow-sm outline-primary transition-colors duration-300 hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   <span class="mx-auto flex items-center gap-2">
                     <!-- Lucide icon (with CDN) to replace with favourite iconpack -->
@@ -255,6 +259,22 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
+
+      // slider controls
+      const slider = document.querySelector("#range");
+      const line = document.querySelector("#progress-bar");
+
+      let value = slider.value;
+      const minValue = slider.min;
+      const maxValue = slider.max;
+      line.style.width =
+        ((value - minValue) / (maxValue - minValue)) * 100 + "%";
+
+      slider.addEventListener("input", () => {
+        value = slider.value;
+        line.style.width =
+          ((value - minValue) / (maxValue - minValue)) * 100 + "%";
+      });
     </script>
   </body>
 </html>
