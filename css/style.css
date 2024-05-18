@@ -1456,6 +1456,10 @@ input[type="range"]::-webkit-slider-thumb {
     grid-template-columns: 400px minmax(900px, 1fr) 100px;
   }
 
+  .lg\:grid-cols-\[400px_1fr\] {
+    grid-template-columns: 400px 1fr;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
